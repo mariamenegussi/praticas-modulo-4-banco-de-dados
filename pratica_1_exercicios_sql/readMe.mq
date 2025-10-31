@@ -1,0 +1,13 @@
+Este repositório foi criado para exibir meus exercícios de SQL utilizando o Postgres.
+
+O banco possui as seguintes tabelas:
+
+- `clientes`
+    - `nome`, string com no máximo 50 caracteres;
+    - `cpf`, string com 11 caracteres.
+- `produtos`
+    - `nome`, texto;
+    - `preco`, número inteiro (preço em centavos).
+- `compras`
+    - `id_cliente`, número com id do cliente da compra,
+    - `id_produto`, número com id do produto comprado.

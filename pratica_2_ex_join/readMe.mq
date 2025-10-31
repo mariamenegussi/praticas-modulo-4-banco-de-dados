@@ -1,0 +1,17 @@
+**Explicando cada tabela:**
+
+- Tabela central:
+    - `users`: armazena os usuários da plataforma
+- Depoimentos:
+    - `testimonials`: armazena os depoimentos deixados de um usuário para outro. `writerId` é o id do usuário que escreveu o depoimento, enquanto `recipientId` é o id do usuário que recebeu o depoimento
+- Educação:
+    - `educations`: armazena todas as experiências de educação que os usuários tiveram. Pra isso, ela se relaciona com outras duas tabelas: `schools` e `courses`
+    - `schools`: são as escolas onde o usuário pode ter estudado (ex: Driven, Unicamp, etc)
+    - `courses`: são os cursos que os usuários podem ter feito (ex: Software Engineering, Computer Science, etc)
+- Experiências de Trabalho:
+    - `experiences`: armazena as experiências de trabalho que os usuários tiveram. Pra isso ela se relaciona com outras duas tabelas: `companies` e `roles`
+    - `companies`: são as empresas onde o usuário pode ter trabalhado (ex: OLX, IBM)
+    - `roles`: são os cargos que os usuários podem ter atuado (ex: Software Engineer, Consultant, etc)
+- Vagas de emprego:
+    - `jobs`: são todas as vagas de emprego cadastradas na plataforma. Cada vaga está associada a uma empresa e a um cargo, e por isso essa tabela se relaciona também com `companies` e `roles`
+    - `applicants`: é uma tabela meio que indica que usuários se inscreveram pra quais vagas
